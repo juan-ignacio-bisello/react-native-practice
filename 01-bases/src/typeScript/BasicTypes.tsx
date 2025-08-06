@@ -1,18 +1,15 @@
-
-
 export const BasicTypes = () => {
-    
-  const name: string = 'Ignacio';
-  const age: number = 25;
-  const isActive: boolean = true;
+  const name: string = 'Fernando';
+  const age: number = 38;
+  const isActive: boolean = false;
 
-  const powers: string[] = [];
+  const powers: string[] = ['React', 'ReactNative', 'Astro'];
 
   return (
     <>
-        <div>basicTypes</div>
-        { name } - { age } - { isActive ? 'activo' : 'no activo' }
-        { powers}
+      <h3>Tipos básicos</h3>
+      {name} - {age} - {isActive ? 'Activo' : 'No Activo'}
+      <p>{powers.join(', ')}</p>
     </>
-  )
-}
+  );
+};
